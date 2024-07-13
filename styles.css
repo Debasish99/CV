@@ -1,0 +1,196 @@
+/* Basic styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-height: 90vh;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+    animation: fadeIn 1s ease-in-out;
+    color: #ffffff;
+}
+
+/* Scrollbar styling */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #bb86fc;
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background-color: #ff6ec7;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 80px; /* Smaller size */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #bb86fc;
+    transition: transform 0.3s ease;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+}
+
+.header-text {
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: slideInLeft 1s ease-in-out;
+    color: #ff6ec7;
+}
+
+p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Email button styling */
+.email-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1em;
+    color: #121212;
+    background: linear-gradient(145deg, #bb86fc, #ff6ec7);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-button:hover {
+    background: linear-gradient(145deg, #ff6ec7, #bb86fc);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.email-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Link styling */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #ff6ec7;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #bb86fc;
+}
+
+/* Qualification styling */
+.qualification {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.qualification:hover {
+    transform: scale(1.01);
+}
+
+.qualification h3 {
+    margin: 0;
+    color: #ff6ec7;
+}
+
+.qualification p {
+    margin: 5px 0;
+}
+
+/* Badge container styling */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 15px;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+
+.badge img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.badge p {
+    margin: 5px 0;
+    color: #ff6ec7;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
